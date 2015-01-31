@@ -7,3 +7,5 @@ TODO file for mailform-service-specification
 - Add READMEs for old versions of the specifications.
 
 - Add section on migration
+
+- Fix issue with encoding in blank form for 5.00, the same issue is propably relevant for 4.00 version
