@@ -34,7 +34,7 @@ This documentation primarily describes the current version 5.00, earlier revisio
 
 # About this Document
 
-This specification describes version 5 (5.X.X) of the service and 5.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
+This specification describes version 5 (5.X.X) of the service and version 5.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
 
 Any future extensions and possible additions and changes to the implementation are not within the scope of this document and will not be discussed or mentioned throughout this document.
 
