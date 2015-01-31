@@ -11,17 +11,17 @@ Revision: 5.0
 
 <!-- MarkdownTOC -->
 
-- [Introduction][introduction]
-- [About this Document][about-this-document]
-  - [Document History][document-history]
-- [The .dk Registry in Brief][the-dk-registry-in-brief]
-- [Mail-form Service][mail-form-service]
-- [The Form][the-form]
-- [General advice concerning completion of the application form][general-advice-concerning-completion-of-the-application-form]
-- [Submission of the application form][submission-of-the-application-form]
-- [Resources][resources]
-  - [Mailing list][mailing-list]
-  - [Issue Reporting][issue-reporting]
+- [Introduction](#introduction)
+- [About this Document](#about-this-document)
+  - [Document History](#document-history)
+- [The .dk Registry in Brief](#the-dk-registry-in-brief)
+- [Mail-form Service](#mail-form-service)
+- [The Form](#the-form)
+- [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
+- [Submission of the application form](#submission-of-the-application-form)
+- [Resources](#resources)
+  - [Mailing list](#mailing-list)
+  - [Issue Reporting](#issue-reporting)
 
 <!-- /MarkdownTOC -->
 
