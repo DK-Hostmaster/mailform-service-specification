@@ -88,17 +88,17 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
 | Field types.....................[CPAI]
 
 | Field | C | P | A | I | Description |
-| Registrar |
+| Registrar ||||
 | 1a. Registrar ID | + | + | + | + | |
 | 1b. Registrar's reference | * | * | * | * | |
-| Domain name |
+| Domain name ||||
 | 2a. Domain name | + | + | + | + | |
 | 2b. Registration period (years). | + | + | + | + | |
 | 2c. VID (VIP domain name) | + | + | + | + | |
 | 2d. Billing contact's PO-number | * | * | * | * | |
 | 2e. Electronic account code | - | * | - | - | |
 | 2f. Preactivations token | * | * | * | * | |
-| Name servers |
+| Name servers ||||
 | 3a. Name | * | * | * | * | |
 | 3b. Name | * | * | * | * | |
 | 3c. Name | * | * | * | * | |
@@ -106,7 +106,7 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
 | 3e. Name | * | * | * | * | |
 | 3f. Name | * | * | * | * | |
 | 3g. Name | * | * | * | * | |
-| Registrant |
+| Registrant ||||
 | 4.  User ID | ! | ! | ! | ! | |
 | 4a. User type (CPAI) | + | + | + | + | |
 | 4b. Company/Organisation | + | + | + | - | |
@@ -121,7 +121,7 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
 | 4l. E-mail address | + | + | + | + | |
 | 4m. Phone number | + | + | + | + | |
 | 4n. Fax number | * | * | * | * | |
-| Administrator |
+| Administrator ||||
 | 5.  User ID | ! | ! | ! | ! | |
 | 5a. User type (CPAI) | + | + | + | + | |
 | 5b. Company/Organisation | + | + | + | - | |
@@ -136,7 +136,7 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
 | 5l. E-mail address | + | + | + | + | |
 | 5m. Phone number | + | + | + | + | |
 | 5n. Fax number | * | * | * | * | |
-| Billing contact |
+| Billing contact ||||
 | 6.  User ID | ! | ! | ! | ! | |
 | 6a. User type (CPAI) | + | + | + | + | |
 | 6b. Company/Organisation | + | + | + | - | |
@@ -152,7 +152,7 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
 | 6l. E-mail address | + | + | + | + | |
 | 6m. Phone number | + | + | + | + | |
 | 6n. Fax number | * | * | * | * | |
-| Keyholder (DNSSEC) |
+| Keyholder (DNSSEC) ||||
 | 7.  User ID | ! | ! | ! | ! | |
 | 7a. User type (CPAI) | + | + | + | + | |
 | 7b. Company/Organisation | + | + | + | - | |
