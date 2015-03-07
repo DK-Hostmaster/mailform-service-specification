@@ -88,7 +88,7 @@ DK Domain Version Number: 5.00en
 Field types [CPAI]
 
 | Field                           | C | P | A | I | Description |
-+---------------------------------+---+---+---+---+-------------+
+| ------------------------------- |---|---|---|---|-------------|
 | Registrar                       |   |   |   |   |             |
 | 1a. Registrar ID                | + | + | + | + |             |
 | 1b. Registrar's reference       | * | * | * | * |             |
