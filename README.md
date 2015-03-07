@@ -83,7 +83,111 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
   If section 6 is not filled in, section 5 will automatically be copied into section 6.
   
   Section 7-12 is about DNSSEC and shall only be put to use of the keyholder (section 7) and up to 5 keysets (sections 8-12) should be appointed to the domain from the time of set up.
-  
+
+| DK Domain Version Number | + | + | + | + | 5.00en
+| Field types.....................[CPAI]
+
+| Field | C | P | A | I | Description |
+| Registrar |
+| 1a. Registrar ID | + | + | + | + | |
+| 1b. Registrar's reference | * | * | * | * | |
+| Domain name |
+| 2a. Domain name | + | + | + | + | |
+| 2b. Registration period (years). | + | + | + | + | |
+| 2c. VID (VIP domain name) | + | + | + | + | |
+| 2d. Billing contact's PO-number | * | * | * | * | |
+| 2e. Electronic account code | - | * | - | - | |
+| 2f. Preactivations token | * | * | * | * | |
+| Name servers |
+| 3a. Name | * | * | * | * | |
+| 3b. Name | * | * | * | * | |
+| 3c. Name | * | * | * | * | |
+| 3d. Name | * | * | * | * | |
+| 3e. Name | * | * | * | * | |
+| 3f. Name | * | * | * | * | |
+| 3g. Name | * | * | * | * | |
+| Registrant |
+| 4.  User ID | ! | ! | ! | ! | |
+| 4a. User type (CPAI) | + | + | + | + | |
+| 4b. Company/Organisation | + | + | + | - | |
+| 4c. VAT number | + | + | * | - | |
+| 4e. Person | - | - | - | + | |
+| 4f. Address 1 | + | + | + | + | |
+| 4g. Address 2 | * | * | * | * | |
+| 4h. Address 3 | * | * | * | * | |
+| 4i. Postal code | + | + | + | + | |
+| 4j. City | + | + | + | + | |
+| 4k. Country code | + | + | + | + | |
+| 4l. E-mail address | + | + | + | + | |
+| 4m. Phone number | + | + | + | + | |
+| 4n. Fax number | * | * | * | * | |
+| Administrator |
+| 5.  User ID | ! | ! | ! | ! | |
+| 5a. User type (CPAI) | + | + | + | + | |
+| 5b. Company/Organisation | + | + | + | - | |
+| 5c. VAT number | + | + | * | - | |
+| 5e. Person | * | * | * | + | |
+| 5f. Address 1 | + | + | + | + | |
+| 5g. Address 2 | * | * | * | * | |
+| 5h. Address 3 | * | * | * | * | |
+| 5i. Postal code | + | + | + | + | |
+| 5j. City | + | + | + | + | |
+| 5k. Country code | + | + | + | + | |
+| 5l. E-mail address | + | + | + | + | |
+| 5m. Phone number | + | + | + | + | |
+| 5n. Fax number | * | * | * | * | |
+| Billing contact |
+| 6.  User ID | ! | ! | ! | ! | |
+| 6a. User type (CPAI) | + | + | + | + | |
+| 6b. Company/Organisation | + | + | + | - | |
+| 6c. VAT number | + | + | * | - | |
+| 6d. EAN number | - | + | - | - | |
+| 6e. Person | * | * | * | + | |
+| 6f. Address 1 | + | + | + | + | |
+| 6g. Address 2 | * | * | * | * | |
+| 6h. Address 3 | * | * | * | * | |
+| 6i. Postal code | + | + | + | + | |
+| 6j. City | + | + | + | + | |
+| 6k. Country code | + | + | + | + | |
+| 6l. E-mail address | + | + | + | + | |
+| 6m. Phone number | + | + | + | + | |
+| 6n. Fax number | * | * | * | * | |
+| Keyholder (DNSSEC) |
+| 7.  User ID | ! | ! | ! | ! | |
+| 7a. User type (CPAI) | + | + | + | + | |
+| 7b. Company/Organisation | + | + | + | - | |
+| 7c. VAT number | + | + | * | - | |
+| 7d. Person | * | * | * | + | |
+| 7e. Address 1 | + | + | + | + | |
+| 7f. Address 2 | * | * | * | * | |
+| 7g. Address 3 | * | * | * | * | |
+| 7h. Postal code | + | + | + | + | |
+| 7i. City | + | + | + | + | |
+| 7j. Country code | + | + | + | + | |
+| 7k. E-mail address | + | + | + | + | |
+| 7l. Phone number | + | + | + | + | |
+| 7m. Fax number | * | * | * | * | |
+| 8a. Keytag | * | * | * | * | |
+| 8b. Algorithm | ^ | ^ | ^ | ^ | |
+| 8c. Digest_type | ^ | ^ | ^ | ^ | |
+| 8d. Digest | ^ | ^ | ^ | ^ | |
+| 9a. Keytag | * | * | * | * | |
+| 9b. Algorithm | ^ | ^ | ^ | ^ | |
+| 9c. Digest_type | ^ | ^ | ^ | ^ | |
+| 9d. Digest | ^ | ^ | ^ | ^ | |
+| 10a. Keytag | * | * | * | * | |
+| 10b. Algorithm | ^ | ^ | ^ | ^ | |
+| 10c. Digest_type | ^ | ^ | ^ | ^ | |
+| 10d. Digest | ^ | ^ | ^ | ^ | |
+| 11a. Keytag | * | * | * | * | |
+| 11b. Algorithm | ^ | ^ | ^ | ^ | |
+| 11c. Digest_type | ^ | ^ | ^ | ^ | |
+| 11d. Digest | ^ | ^ | ^ | ^ | |
+| 12a. Keytag | * | * | * | * | |
+| 12b. Algorithm | ^ | ^ | ^ | ^ | |
+| 12c. Digest_type | ^ | ^ | ^ | ^ | |
+| 12d. Digest | ^ | ^ | ^ | ^ | |
+
   ## Key
   <table border="0">
     <tbody>
