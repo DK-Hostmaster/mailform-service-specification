@@ -84,8 +84,8 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
   
   Section 7-12 is about DNSSEC and shall only be put to use of the keyholder (section 7) and up to 5 keysets (sections 8-12) should be appointed to the domain from the time of set up.
 
-| DK Domain Version Number | + | + | + | + | 5.00en
-| Field types.....................[CPAI]
+DK Domain Version Number: 5.00en
+Field types [CPAI]
 
 | Field | C | P | A | I | Description |
 | Registrar ||||
