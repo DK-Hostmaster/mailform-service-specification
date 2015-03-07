@@ -29,8 +29,8 @@ Revision: 5.0
 
 This documentation primarily describes the current version 5.00, earlier revisions might still be actively supported for for documentation on these revisions please see:
 
-  * [README_4.00.md][4.00]
-  * [README_3.04.md][3.04] - _will be deprecated by the 1. of june 2015_
+  * [Version 4.00][README_4.00.md]
+  * [Version 3.04][README_3.04.md] - _will be deprecated by the 1. of june 2015_
 
 # About this Document
 
@@ -544,8 +544,8 @@ If we reject your application, you will not receive a tracking number. We will h
 
 You will find the blank forms here:
 
-  * [5.00 english version][5.00/5.00en.txt]
-  * [5.00 danish version][5.00/5.00da.txt]
+  * [5.00 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00en.txt)
+  * [5.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00da.txt)
 
 # Resources 
 
