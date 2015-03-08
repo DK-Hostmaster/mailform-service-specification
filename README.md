@@ -89,105 +89,105 @@ Field types [CPAI]
 
 | Field                           | C | P | A | I | Description |
 | ------------------------------- |---|---|---|---|-------------|
-| Registrar                       |   |   |   |   |             |
-| 1a. Registrar ID                | + | + | + | + |             |
-| 1b. Registrar's reference       | * | * | * | * |             |
-| Domain name                     |   |   |   |   |             |             
-| 2a. Domain name                 | + | + | + | + |             |
-| 2b. Registration period (years) | + | + | + | + |             |
-| 2c. VID (VIP domain name)       | + | + | + | + |             |
-| 2d. Billing contact's PO-number | * | * | * | * |             |
-| 2e. Electronic account code     | - | * | - | - |             |
-| 2f. Preactivations token        | * | * | * | * |             |
-| Name servers                    |   |   |   |   |             |
-| 3a. Name                        | * | * | * | * |             |
-| 3b. Name                        | * | * | * | * |             |
-| 3c. Name                        | * | * | * | * |             |
-| 3d. Name                        | * | * | * | * |             |
-| 3e. Name                        | * | * | * | * |             |
-| 3f. Name                        | * | * | * | * |             |
-| 3g. Name                        | * | * | * | * |             |
-| Registrant                      |   |   |   |   |             | 
-| 4.  User ID                     | ! | ! | ! | ! |             |
-| 4a. User type (CPAI)            | + | + | + | + |             |
-| 4b. Company/Organisation        | + | + | + | - |             |
-| 4c. VAT number                  | + | + | * | - |             |
-| 4e. Person                      | - | - | - | + |             |
-| 4f. Address 1                   | + | + | + | + |             |
-| 4g. Address 2                   | * | * | * | * |             |
-| 4h. Address 3                   | * | * | * | * |             |
-| 4i. Postal code                 | + | + | + | + |             |
-| 4j. City                        | + | + | + | + |             |
-| 4k. Country code                | + | + | + | + |             |
-| 4l. E-mail address              | + | + | + | + |             |
-| 4m. Phone number                | + | + | + | + |             |
-| 4n. Fax number                  | * | * | * | * |             |
-| Administrator                   |   |   |   |   |             |
-| 5.  User ID                     | ! | ! | ! | ! |             |
-| 5a. User type (CPAI)            | + | + | + | + |             |
-| 5b. Company/Organisation        | + | + | + | - |             |
-| 5c. VAT number                  | + | + | * | - |             |
-| 5e. Person                      | * | * | * | + |             |
-| 5f. Address 1                   | + | + | + | + |             |
-| 5g. Address 2                   | * | * | * | * |             |
-| 5h. Address 3                   | * | * | * | * |             |
-| 5i. Postal code                 | + | + | + | + |             |
-| 5j. City                        | + | + | + | + |             |
-| 5k. Country code                | + | + | + | + |             |
-| 5l. E-mail address              | + | + | + | + |             |
-| 5m. Phone number                | + | + | + | + |             |
-| 5n. Fax number                  | * | * | * | * |             |
-| Billing contact                 |   |   |   |   |             | 
-| 6.  User ID                     | ! | ! | ! | ! |             |
-| 6a. User type (CPAI)            | + | + | + | + |             |
-| 6b. Company/Organisation        | + | + | + | - |             |
-| 6c. VAT number                  | + | + | * | - |             |
-| 6d. EAN number                  | - | + | - | - |             |
-| 6e. Person                      | * | * | * | + |             |
-| 6f. Address 1                   | + | + | + | + |             |
-| 6g. Address 2                   | * | * | * | * |             |
-| 6h. Address 3                   | * | * | * | * |             |
-| 6i. Postal code                 | + | + | + | + |             |
-| 6j. City                        | + | + | + | + |             |
-| 6k. Country code                | + | + | + | + |             |
-| 6l. E-mail address              | + | + | + | + |             |
-| 6m. Phone number                | + | + | + | + |             |
-| 6n. Fax number                  | * | * | * | * |             |
-| Keyholder (DNSSEC)              |   |   |   |   |             | 
-| 7.  User ID                     | ! | ! | ! | ! |             |
-| 7a. User type (CPAI)            | + | + | + | + |             |
-| 7b. Company/Organisation        | + | + | + | - |             |
-| 7c. VAT number                  | + | + | * | - |             |
-| 7d. Person                      | * | * | * | + |             |
-| 7e. Address 1                   | + | + | + | + |             |
-| 7f. Address 2                   | * | * | * | * |             |
-| 7g. Address 3                   | * | * | * | * |             |
-| 7h. Postal code                 | + | + | + | + |             |
-| 7i. City                        | + | + | + | + |             |
-| 7j. Country code                | + | + | + | + |             |
-| 7k. E-mail address              | + | + | + | + |             |
-| 7l. Phone number                | + | + | + | + |             |
-| 7m. Fax number                  | * | * | * | * |             |
-| 8a. Keytag                      | * | * | * | * |             |
-| 8b. Algorithm                   | ^ | ^ | ^ | ^ |             |
-| 8c. Digest_type                 | ^ | ^ | ^ | ^ |             |
-| 8d. Digest                      | ^ | ^ | ^ | ^ |             |
-| 9a. Keytag                      | * | * | * | * |             |
-| 9b. Algorithm                   | ^ | ^ | ^ | ^ |             |
-| 9c. Digest_type                 | ^ | ^ | ^ | ^ |             |
-| 9d. Digest                      | ^ | ^ | ^ | ^ |             |
-| 10a. Keytag                     | * | * | * | * |             |
-| 10b. Algorithm                  | ^ | ^ | ^ | ^ |             |
-| 10c. Digest_type                | ^ | ^ | ^ | ^ |             |
-| 10d. Digest                     | ^ | ^ | ^ | ^ |             |
-| 11a. Keytag                     | * | * | * | * |             |
-| 11b. Algorithm                  | ^ | ^ | ^ | ^ |             |
-| 11c. Digest_type                | ^ | ^ | ^ | ^ |             |
-| 11d. Digest                     | ^ | ^ | ^ | ^ |             |
-| 12a. Keytag                     | * | * | * | * |             |
-| 12b. Algorithm                  | ^ | ^ | ^ | ^ |             |
-| 12c. Digest_type                | ^ | ^ | ^ | ^ |             |
-| 12d. Digest                     | ^ | ^ | ^ | ^ |             |
+| *Registrar section*             |   |   |   |   |             |
+| 1a. Registrar ID                | + | + | + | + | Unique id for the registrar submitting the form |
+| 1b. Registrar's reference       | * | * | * | * | Optional ID for identification by the registrar |
+| *Domain name section*           |   |   |   |   |             |             
+| 2a. Domain name                 | + | + | + | + | Application domain name |
+| 2b. Registration period (years) | + | + | + | + | 1, 2, 3 or 5 years |
+| 2c. VID (VIP domain name)       | + | + | + | + | Can only be `N` |
+| 2d. Billing contact's PO-number | * | * | * | * | Optional purcharse order number |
+| 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organizations |
+| 2f. Preactivations token        | * | * | * | * | Optional pre-activation token from the pre-activation service, the token is not valid application will be regarded as a regular application |
+| *Name servers section*          |   |   |   |   |             |
+| 3a. Name                        | + | + | + | + | Mandatory name server |
+| 3b. Name                        | + | + | + | + | Mandatory name server |
+| 3c. Name                        | * | * | * | * | Optional extra nameserver |
+| 3d. Name                        | * | * | * | * | Optional extra nameserver |
+| 3e. Name                        | * | * | * | * | Optional extra nameserver |
+| 3f. Name                        | * | * | * | * | Optional extra nameserver |
+| 3g. Name                        | * | * | * | * | Optional extra nameserver |
+| *Registrant contact section*    |   |   |   |   | The registrant section can either be filled in as a user-id or a complete set of data | 
+| 4.  User ID                     | ! | ! | ! | ! | Existing user-id |
+| 4a. User type                   | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
+| 4b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 4c. VAT number                  | + | + | * | - | VAT/CVR number |
+| 4e. Person                      | - | - | - | + | Name of individual |
+| 4f. Address 1                   | + | + | + | + | Mandatory address field |
+| 4g. Address 2                   | * | * | * | * | Optional address field |
+| 4h. Address 3                   | * | * | * | * | Optional address field |
+| 4i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
+| 4j. City                        | + | + | + | + | Mandatory city name |
+| 4k. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 4l. E-mail address              | + | + | + | + | Mandatory e-mail address |
+| 4m. Phone number                | + | + | + | + | Mandatory phone number |
+| 4n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
+| *Administrator contact section* |   |   |   |   | The administrator contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used |
+| 5.  User ID                     | ! | ! | ! | ! | Existing user-id |
+| 5a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
+| 5b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 5c. VAT number                  | + | + | * | - | VAT/CVR number |
+| 5e. Person                      | * | * | * | + | Name of individual |
+| 5f. Address 1                   | + | + | + | + | Mandatory address field |
+| 5g. Address 2                   | * | * | * | * | Optional address field |
+| 5h. Address 3                   | * | * | * | * | Optional address field |
+| 5i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
+| 5j. City                        | + | + | + | + | Mandatory city name |
+| 5k. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 5l. E-mail address              | + | + | + | + | Mandatory e-mail address |
+| 5m. Phone number                | + | + | + | + | Mandatory phone number |
+| 5n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
+| *Billing contact section*       |   |   |   |   | The billing contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used | 
+| 6.  User ID                     | ! | ! | ! | ! | Existing user-id |
+| 6a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
+| 6b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 6c. VAT number                  | + | + | * | - | VAT/CVR number |
+| 6d. EAN number                  | - | + | - | - | EAN-number for eletronical billing, only applicable for public organizations |
+| 6e. Person                      | * | * | * | + | Name of individual |
+| 6f. Address 1                   | + | + | + | + | Mandatory address field |
+| 6g. Address 2                   | * | * | * | * | Optional address field |
+| 6h. Address 3                   | * | * | * | * | Optional address field |
+| 6i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
+| 6j. City                        | + | + | + | + | Mandatory city name |
+| 6k. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 6l. E-mail address              | + | + | + | + | Mandatory e-mail address |
+| 6m. Phone number                | + | + | + | + | Mandatory phone number |
+| 6n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
+| Keyholder contact section |   |   |   |   | The keyholder contact section can either be filled in as a user-id or a complete set of data, if DS keys are included and the section is not filled in data from the above Registrant contact section will be used | 
+| 7.  User ID                     | ! | ! | ! | ! | Existing user-id |
+| 7a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
+| 7b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 7c. VAT number                  | + | + | * | - | VAT/CVR number |
+| 7d. Person                      | * | * | * | + | Name of individual |
+| 7e. Address 1                   | + | + | + | + | Mandatory address field |
+| 7f. Address 2                   | * | * | * | * | Optional address field |
+| 7g. Address 3                   | * | * | * | * | Optional address field |
+| 7h. Postal code                 | + | + | + | + | Mandatory zip/postal code |
+| 7i. City                        | + | + | + | + | Mandatory city name |
+| 7j. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 7k. E-mail address              | + | + | + | + | Mandatory e-mail address |
+| 7l. Phone number                | + | + | + | + | Mandatory phone number |
+| 7m. Fax number                  | * | * | * | * | Optional fax/facsimile number |
+| 8a. Keytag                      | * | * | * | * | Unique keytag of DS keyset 1, the keytag has to be unique to the domain name set of keys |
+| 8b. Algorithm                   | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
+| 8c. Digest_type                 | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
+| 8d. Digest                      | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
+| 9a. Keytag                      | * | * | * | * | Unique keytag of DS keyset 2, the keytag has to be unique to the domain name set of keys |
+| 9b. Algorithm                   | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
+| 9c. Digest_type                 | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
+| 9d. Digest                      | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
+| 10a. Keytag                     | * | * | * | * | Unique keytag of DS keyset 3, the keytag has to be unique to the domain name set of keys |
+| 10b. Algorithm                  | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
+| 10c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
+| 10d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
+| 11a. Keytag                     | * | * | * | * | Unique keytag of DS keyset 4, the keytag has to be unique to the domain name set of keys |
+| 11b. Algorithm                  | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
+| 11c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
+| 11d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
+| 12a. Keytag                     | * | * | * | * | Unique keytag of DS keyset 5, the keytag has to be unique to the domain name set of keys |
+| 12b. Algorithm                  | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
+| 12c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
+| 12d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
 
   ## Key
   <table border="0">
