@@ -20,6 +20,8 @@ Revision: 5.0
 - [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
 - [Submission of the application form](#submission-of-the-application-form)
 - [Resources](#resources)
+  - [Pre-activation](#pre-activation)
+  - [DNSSEC](#dnssec)
   - [Mailing list](#mailing-list)
   - [Issue Reporting](#issue-reporting)
 
@@ -94,7 +96,7 @@ Field types [CPAI]
 | 1b. Registrar's reference       | * | * | * | * | Optional ID for identification by the registrar |
 | *Domain name section*           |   |   |   |   |             |             
 | 2a. Domain name                 | + | + | + | + | Application domain name |
-| 2b. Registration period (years) | + | + | + | + | 1, 2, 3 or 5 years |
+| 2b. Registration period (years) | + | + | + | + | `1`, `2`, `3` or `5` years |
 | 2c. VID (VIP domain name)       | + | + | + | + | Can only be `N` |
 | 2d. Billing contact's PO-number | * | * | * | * | Optional purcharse order number |
 | 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organizations |
@@ -118,7 +120,7 @@ Field types [CPAI]
 | 4h. Address 3                   | * | * | * | * | Optional address field |
 | 4i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 4j. City                        | + | + | + | + | Mandatory city name |
-| 4k. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 4k. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
 | 4l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 4m. Phone number                | + | + | + | + | Mandatory phone number |
 | 4n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
@@ -133,7 +135,7 @@ Field types [CPAI]
 | 5h. Address 3                   | * | * | * | * | Optional address field |
 | 5i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 5j. City                        | + | + | + | + | Mandatory city name |
-| 5k. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 5k. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
 | 5l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 5m. Phone number                | + | + | + | + | Mandatory phone number |
 | 5n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
@@ -149,7 +151,7 @@ Field types [CPAI]
 | 6h. Address 3                   | * | * | * | * | Optional address field |
 | 6i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 6j. City                        | + | + | + | + | Mandatory city name |
-| 6k. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 6k. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
 | 6l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 6m. Phone number                | + | + | + | + | Mandatory phone number |
 | 6n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
@@ -164,7 +166,7 @@ Field types [CPAI]
 | 7g. Address 3                   | * | * | * | * | Optional address field |
 | 7h. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 7i. City                        | + | + | + | + | Mandatory city name |
-| 7j. Country code                | + | + | + | + | Mandatory two-digit country code |
+| 7j. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
 | 7k. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 7l. Phone number                | + | + | + | + | Mandatory phone number |
 | 7m. Fax number                  | * | * | * | * | Optional fax/facsimile number |
@@ -654,6 +656,20 @@ You will find the blank forms here:
 
 # Resources 
 
+## Pre-activation
+
+The mail form only support the transport of the pre-activation token (`Preactivations token`). The token has to have been pre-registered with DK Hostmaster using the pre-activation service. If the provided token is not valid or existing at the time of reception of the application, the application will be processed as no pre-activation has taken place.
+
+More information and documentation on the pre-activation service is available at the DK Hostmaster website:
+
+  * https://www.dk-hostmaster.dk/english/technical-administration/tech-notes/pre-activation/
+
+## DNSSEC
+
+More information and documentation on the use of DNSSEC service is available at the DK Hostmaster website:
+
+  * https://www.dk-hostmaster.dk/english/technical-administration/tech-notes/dnssec/
+
 ## Mailing list
 
 DK Hostmaster operates a mailing list for discussion and inquiries about the DK Hostmaster mail-form service. To subscribe to this list, write to the address below and follow the instructions. Please note that the list is for technical discussion only, any issues beyond the technical scope will not be responded to, please send these to the contact issue reporting address below and they will be passed on to the appropriate entities within DK Hostmaster.
@@ -665,3 +681,5 @@ DK Hostmaster operates a mailing list for discussion and inquiries about the DK 
 For issue reporting related to this specification, the pre-activation service, sandbox or production environments, please contact us.  You are of course welcome to post these to the mailing list mentioned above, otherwise use the address specified below:
 
 * tech@dk-hostmaster.dk
+
+[ISO-3166-1](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
