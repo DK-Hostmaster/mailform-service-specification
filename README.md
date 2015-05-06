@@ -44,6 +44,8 @@ This document is owned and maintained by DK Hostmaster A/S and must not be distr
 
 All examples provided in the document are fabricated or changed from real data to demonstrate commands etc. any resemblence to actual data are coincidental.
 
+Printable version can be obtained via [this link](https://github.com/DK-Hostmaster/mailform-service-specification/blob/master/README.md), using the gitprint service.
+
 ## Document History
 
 * 5.0 2015-01-30 
@@ -632,7 +634,7 @@ Field types [CPAI]
       </tr>
     </tbody>
   </table>
-  
+
 # General advice concerning completion of the application form
 Your application will be rejected if you modify the form or break the lines.
 
