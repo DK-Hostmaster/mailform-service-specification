@@ -27,6 +27,7 @@ Revision: 5.0
 
 <!-- /MarkdownTOC -->
 
+<a name="introduction"></a>
 # Introduction
 
 This documentation primarily describes the current version 5.00, earlier revisions might still be actively supported for for documentation on these revisions please see:
@@ -34,6 +35,7 @@ This documentation primarily describes the current version 5.00, earlier revisio
   * [Version 4.00][README_4.00.md]
   * [Version 3.04][README_3.04.md] - _will be deprecated by the 1. of june 2015_
 
+<a name="about-this-document"></a>
 # About this Document
 
 This specification describes version 5 (5.X.X) of the service and version 5.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
@@ -46,15 +48,18 @@ All examples provided in the document are fabricated or changed from real data t
 
 Printable version can be obtained via [this link](https://github.com/DK-Hostmaster/mailform-service-specification/blob/master/README.md), using the gitprint service.
 
+<a name="document-history"></a>
 ## Document History
 
 * 5.0 2015-01-30 
   * Documentation migrated from proprietary text/HTML files to dedicated Github repository, so we reset history, but start from version 5.00 to be consistent with earlier documentation, API revisions and service versions.
 
+<a name="the-dk-registry-in-brief"></a>
 # The .dk Registry in Brief
 
 DK Hostmaster is the registry for the ccTLD for Denmark (dk). The current model used in Denmark is based on a sole registry, with DK Hostmaster maintaining the central DNS registry.
 
+<a name="mail-form-service"></a>
 # Mail-form Service
 
 The DK Hostmaster mail-form service is a service offered to external parties offering registration of danish domain names on the ccTLD .dk to registered registrars.
@@ -63,6 +68,7 @@ The service requires the use of and possible development of client-side software
 
 In addition to the assets, DK Hostmaster aims to assist client, users and developers of client software with integration towards DK Hostmaster and therefore provide facilities to ease this integration.
 
+<a name="the-form"></a>
 # The Form
 
 The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that continue down the form. They stand for:
@@ -635,9 +641,11 @@ Field types [CPAI]
     </tbody>
   </table>
 
+<a name="general-advice-concerning-completion-of-the-application-form"></a>
 # General advice concerning completion of the application form
 Your application will be rejected if you modify the form or break the lines.
 
+<a name="submission-of-the-application-form"></a>
 # Submission of the application form
 Send one application per e-mail, entering `hostmaster@dk-hostmaster.dk` as the address in the &ldquo;To&rdquo; field. The application must not be sent as an attached file, Cc or similar.
 
@@ -656,32 +664,37 @@ You will find the blank forms here:
   * [5.00 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00en.txt)
   * [5.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00da.txt)
 
+<a name="resources"></a>
 # Resources 
 
+<a name="pre-activation"></a>
 ## Pre-activation
 
 The mail form only support the transport of the pre-activation token (`Preactivations token`). The token has to have been pre-registered with DK Hostmaster using the pre-activation service. If the provided token is not valid or existing at the time of reception of the application, the application will be processed as no pre-activation has taken place.
 
 More information and documentation on the pre-activation service is available at the DK Hostmaster website:
 
-  * https://www.dk-hostmaster.dk/english/technical-administration/tech-notes/pre-activation/
+  * https://www.dk-hostmaster.dk/en/pre-activation
 
+<a name="dnssec"></a>
 ## DNSSEC
 
 More information and documentation on the use of DNSSEC service is available at the DK Hostmaster website:
 
-  * https://www.dk-hostmaster.dk/english/technical-administration/tech-notes/dnssec/
+  * https://www.dk-hostmaster.dk/en/dns
 
+<a name="mailing-list"></a>
 ## Mailing list
 
 DK Hostmaster operates a mailing list for discussion and inquiries about the DK Hostmaster mail-form service. To subscribe to this list, write to the address below and follow the instructions. Please note that the list is for technical discussion only, any issues beyond the technical scope will not be responded to, please send these to the contact issue reporting address below and they will be passed on to the appropriate entities within DK Hostmaster.
 
-* mailform-discuss+subscribe@liste.dk-hostmaster.dk
+* tech-discuss+subscribe@liste.dk-hostmaster.dk
 
+<a name="issue-reporting"></a>
 ## Issue Reporting
 
 For issue reporting related to this specification, the pre-activation service, sandbox or production environments, please contact us.  You are of course welcome to post these to the mailing list mentioned above, otherwise use the address specified below:
 
-* tech@dk-hostmaster.dk
+* info@dk-hostmaster.dk
 
-[ISO-3166-1](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2)
+[ISO-3166-1]: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
