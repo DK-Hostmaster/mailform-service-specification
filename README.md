@@ -17,6 +17,7 @@ Revision: 5.0
 - [The .dk Registry in Brief](#the-dk-registry-in-brief)
 - [Mail-form Service](#mail-form-service)
 - [The Form](#the-form)
+  - [Keys](#keys)
 - [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
 - [Submission of the application form](#submission-of-the-application-form)
 - [Resources](#resources)
@@ -80,7 +81,7 @@ The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that contin
   
   The columns determine how the individual sections are to be filled in. If, for example, the registrant is a company, then column **'C'** must be used for section 4. If the billing contact is a Danish public sector organisation, then **'P'** must be used when filling in section 6.
 
-  Field 2c must, for now, only contain an 'N'.
+  Field 2c must, only contain an 'N'.
   
   Field 2d concerns the billing contact and may be used only if the billing contact is a Danish public sector organisation that is to be invoiced via the Danish OIOXML/UBLXML standard. Field 2e also concerns the billing contact, but may be used by anyone requiring a purchase order number on future invoices relating to the domain name.
   
@@ -199,7 +200,9 @@ Field types [CPAI]
 | 12c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
 | 12d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
 
-  ## Key
+<a name="keys"></a>
+## Keys
+
   <table border="0">
     <tbody>
       <tr>
@@ -649,7 +652,7 @@ Your application will be rejected if you modify the form or break the lines.
 # Submission of the application form
 Send one application per e-mail, entering `hostmaster@dk-hostmaster.dk` as the address in the &ldquo;To&rdquo; field. The application must not be sent as an attached file, Cc or similar.
 
-It must be sent as plain text in one of these formats:
+It must be sent as plain text in one of the following formats:
 
   * US-ASCII
   * ISO-8859-1
@@ -662,7 +665,7 @@ If we reject your application, you will not receive a tracking number. We will h
 You will find the blank forms here:
 
   * [5.00 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00en.txt)
-  * [5.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00da.txt)
+  * [5.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00da.txt), please note that this file is encoded using ISO-8859-1
 
 <a name="resources"></a>
 # Resources 
