@@ -1,4 +1,4 @@
-Guide at http://www.dk-hostmaster.dk/doc/dk-4.00en-guide
+Guide at https://github.com/DK-Hostmaster/mailform-service-specification
 
 DK Domain Version Number: 4.00en
 

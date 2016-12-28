@@ -1,4 +1,4 @@
-Vejledning på http://www.dk-hostmaster.dk/dok/dk-5.00da-vejl
+Vejledning på https://github.com/DK-Hostmaster/mailform-service-specification
 
 DK Domain Version Number: 5.00da
 
