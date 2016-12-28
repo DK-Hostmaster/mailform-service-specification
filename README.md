@@ -316,6 +316,9 @@ Field types [CPAI]
         <td>
           <p>20</p>
         </td>
+        <td>
+          <p>50</p>
+        </td>
       </tr>
       <tr valign="top">
         <td>
