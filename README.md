@@ -558,7 +558,7 @@ Field types [CPAI]
           <p>20</p>
         </td>
         <td>
-          <p>2</p>
+          <p>20</p>
         </td>
       </tr>
       <tr valign="top">
