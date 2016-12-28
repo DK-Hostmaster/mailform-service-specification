@@ -73,12 +73,12 @@ In addition to the assets, DK Hostmaster aims to assist client, users and develo
 
 The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that continue down the form. They stand for:
 
-  * _C_ompany (Danish: Virksomhed)
-  * Danish _P_ublic sector organisation (Danish: Offentlig virksomhed)
-  * _A_ssociation (Danish: Forening)
-  * _I_ndividual (Danish: Privatperson)
+  * **C**ompany (Danish: Virksomhed)
+  * Danish **P**ublic sector organisation (Danish: Offentlig virksomhed)
+  * **A**ssociation (Danish: Forening)
+  * **I**ndividual (Danish: Privatperson)
   
-  The columns determine how the individual sections are to be filled in. If, for example, the registrant is a company, then column _'C'_ must be used for section 4. If the billing contact is a Danish public sector organisation, then _'P'_ must be used when filling in section 6.
+  The columns determine how the individual sections are to be filled in. If, for example, the registrant is a company, then column **'C'** must be used for section 4. If the billing contact is a Danish public sector organisation, then **'P'** must be used when filling in section 6.
 
   Field 2c must, for now, only contain an 'N'.
   
@@ -107,7 +107,7 @@ Field types [CPAI]
 | 2b. Registration period (years) | + | + | + | + | `1`, `2`, `3` or `5` years |
 | 2c. VID (VIP domain name)       | + | + | + | + | Can only be `N` |
 | 2d. Billing contact's PO-number | * | * | * | * | Optional purcharse order number |
-| 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organizations |
+| 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organisations |
 | 2f. Preactivations token        | * | * | * | * | Optional pre-activation token from the pre-activation service, the token is not valid application will be regarded as a regular application |
 | *Name servers section*          |   |   |   |   |             |
 | 3a. Name                        | + | + | + | + | Mandatory name server |
@@ -119,8 +119,8 @@ Field types [CPAI]
 | 3g. Name                        | * | * | * | * | Optional extra nameserver |
 | *Registrant contact section*    |   |   |   |   | The registrant section can either be filled in as a user-id or a complete set of data | 
 | 4.  User ID                     | ! | ! | ! | ! | Existing user-id |
-| 4a. User type                   | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
-| 4b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 4a. User type                   | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
+| 4b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
 | 4c. VAT number                  | + | + | * | - | VAT/CVR number |
 | 4e. Person                      | - | - | - | + | Name of individual |
 | 4f. Address 1                   | + | + | + | + | Mandatory address field |
@@ -134,8 +134,8 @@ Field types [CPAI]
 | 4n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
 | *Administrator contact section* |   |   |   |   | The administrator contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used |
 | 5.  User ID                     | ! | ! | ! | ! | Existing user-id |
-| 5a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
-| 5b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 5a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
+| 5b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
 | 5c. VAT number                  | + | + | * | - | VAT/CVR number |
 | 5e. Person                      | * | * | * | + | Name of individual |
 | 5f. Address 1                   | + | + | + | + | Mandatory address field |
@@ -149,10 +149,10 @@ Field types [CPAI]
 | 5n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
 | *Billing contact section*       |   |   |   |   | The billing contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used | 
 | 6.  User ID                     | ! | ! | ! | ! | Existing user-id |
-| 6a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
-| 6b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 6a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
+| 6b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
 | 6c. VAT number                  | + | + | * | - | VAT/CVR number |
-| 6d. EAN number                  | - | + | - | - | EAN-number for eletronical billing, only applicable for public organizations |
+| 6d. EAN number                  | - | + | - | - | EAN-number for eletronical billing, only applicable for public organisations |
 | 6e. Person                      | * | * | * | + | Name of individual |
 | 6f. Address 1                   | + | + | + | + | Mandatory address field |
 | 6g. Address 2                   | * | * | * | * | Optional address field |
@@ -165,8 +165,8 @@ Field types [CPAI]
 | 6n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
 | Keyholder contact section |   |   |   |   | The keyholder contact section can either be filled in as a user-id or a complete set of data, if DS keys are included and the section is not filled in data from the above Registrant contact section will be used | 
 | 7.  User ID                     | ! | ! | ! | ! | Existing user-id |
-| 7a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organization, `A` Association or `I` individual |
-| 7b. Company/Organisation        | + | + | + | - | Name of company, Organization or Association |
+| 7a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
+| 7b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
 | 7c. VAT number                  | + | + | * | - | VAT/CVR number |
 | 7d. Person                      | * | * | * | + | Name of individual |
 | 7e. Address 1                   | + | + | + | + | Mandatory address field |
