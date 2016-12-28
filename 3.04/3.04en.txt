@@ -1,0 +1,81 @@
+Guide at https://github.com/DK-Hostmaster/mailform-service-specification
+
+DK Domain Version Number: 3.04en
+
+Field types.....................[CPAI]
+
+Registrar
+1a. Registrar ID................[++++]:
+1b. Registrar's reference.......[****]:
+
+Domain name
+2a. Domain name.................[++++]:
+2b. Registration period (years).[++++]:
+2c. VID (VIP domain name).......[++++]:
+2d. Billing contact's PO-number.[****]:
+2e. Electronic account code.....[-*--]:
+
+Name servers
+3a. Name........................[++++]:
+3b. IP address..................[^^^^]:
+3c. Name........................[++++]:
+3d. IP address..................[^^^^]:
+3e. Name........................[****]:
+3f. IP address..................[^^^^]:
+3g. Name........................[****]:
+3h. IP address..................[^^^^]:
+3i. Name........................[****]:
+3j. IP address..................[^^^^]:
+3k. Name........................[****]:
+3l. IP address..................[^^^^]:
+3m. Name........................[****]:
+3n. IP address..................[^^^^]:
+
+Registrant
+4.  User ID.....................[!!!!]:
+4a. User type (CPAI)............[++++]:
+4b. Company/Organisation........[+++-]:
+4c. VAT number..................[++*-]:
+4e. Person......................[---+]:
+4f. Address 1...................[++++]:
+4g. Address 2...................[****]:
+4h. Address 3...................[****]:
+4i. Postal code.................[++++]:
+4j. City........................[++++]:
+4k. Country code................[++++]:
+4l. E-mail address..............[++++]:
+4m. Phone number................[++++]:
+4n. Fax number..................[****]:
+
+Administrator
+5.  User ID.....................[!!!!]:
+5a. User type (CPAI)............[++++]:
+5b. Company/Organisation........[+++-]:
+5c. VAT number..................[++*-]:
+5e. Person......................[***+]:
+5f. Address 1...................[++++]:
+5g. Address 2...................[****]:
+5h. Address 3...................[****]:
+5i. Postal code.................[++++]:
+5j. City........................[++++]:
+5k. Country code................[++++]:
+5l. E-mail address..............[++++]:
+5m. Phone number................[++++]:
+5n. Fax number..................[****]:
+
+Billing contact
+6.  User ID.....................[!!!!]:
+6a. User type (CPAI)............[++++]:
+6b. Company/Organisation........[+++-]:
+6c. VAT number..................[++*-]:
+6d. EAN number..................[-+--]:
+6e. Person......................[***+]:
+6f. Address 1...................[++++]:
+6g. Address 2...................[****]:
+6h. Address 3...................[****]:
+6i. Postal code.................[++++]:
+6j. City........................[++++]:
+6k. Country code................[++++]:
+6l. E-mail address..............[++++]:
+6m. Phone number................[++++]:
+6n. Fax number..................[****]:

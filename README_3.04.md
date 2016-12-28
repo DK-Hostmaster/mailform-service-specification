@@ -5,7 +5,7 @@ Public specification for the DK Hostmaster mailform domain registration service.
 # **_DRAFT_**
 
 2016/12/28
-Revision: 5.0
+Revision: 3.0
 
 # Table of Contents
 
@@ -21,8 +21,6 @@ Revision: 5.0
 - [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
 - [Submission of the application form](#submission-of-the-application-form)
 - [Resources](#resources)
-  - [Pre-activation](#pre-activation)
-  - [DNSSEC](#dnssec)
   - [Mailing list](#mailing-list)
   - [Issue Reporting](#issue-reporting)
 
@@ -31,15 +29,15 @@ Revision: 5.0
 <a name="introduction"></a>
 # Introduction
 
-This documentation describes the current version 5.00, earlier revisions might still be actively supported for for documentation on these revisions please see:
+This documentation describes the version 3.04, for newer revisions please see:
 
-  * [Version 4.00](README_4.00.md)
-  * [Version 3.04](README_3.04.md)
+  * [Version 4.00][README_4.00.md]
+  * [Version 5.00][README.md]
 
 <a name="about-this-document"></a>
 # About this Document
 
-This specification describes version 5 (5.X.X) of the service and version 5.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
+This specification describes version 3 (3.X.X) of the service and version 3.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
 
 Any future extensions and possible additions and changes to the implementation are not within the scope of this document and will not be discussed or mentioned throughout this document.
 
@@ -52,12 +50,8 @@ Printable version can be obtained via [this link](https://github.com/DK-Hostmast
 <a name="document-history"></a>
 ## Document History
 
-* 5.0 2016-12-28 
-  * Documentation migrated from proprietary text/HTML files to dedicated Github repository, so we reset history, but start from version 5.00 to be consistent with earlier documentation, API revisions and service versions.
-  * The revision introduces the pre-activation token
-
-* 4.0 2016-12-28
-  * This revision introduces DNSSEC and keyholder user
+* 3.0 2016-12-28
+  * Documentation migrated from proprietary text/HTML files to dedicated Github repository
 
 <a name="the-dk-registry-in-brief"></a>
 # The .dk Registry in Brief
@@ -97,9 +91,7 @@ If section 5 is not filled in, section 4 will automatically be copied into secti
 
 If section 6 is not filled in, section 5 will automatically be copied into section 6.
 
-Section 7-12 is about DNSSEC and shall only be put to use of the keyholder (section 7) and up to 5 keysets (sections 8-12) should be appointed to the domain from the time of set up.
-
-DK Domain Version Number: 5.00en
+DK Domain Version Number: 3.04en
 Field types [CPAI]
 
 | Field                           | C | P | A | I | Description |
@@ -113,15 +105,21 @@ Field types [CPAI]
 | 2c. VID (VIP domain name)       | + | + | + | + | Can only be `N` |
 | 2d. Billing contact's PO-number | * | * | * | * | Optional purcharse order number |
 | 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organisations |
-| 2f. Preactivations token        | * | * | * | * | Optional pre-activation token from the pre-activation service, the token is not valid application will be regarded as a regular application |
 | **Name servers section**        |   |   |   |   |             |
 | 3a. Name                        | + | + | + | + | Mandatory name server |
-| 3b. Name                        | + | + | + | + | Mandatory name server |
-| 3c. Name                        | * | * | * | * | Optional extra nameserver |
-| 3d. Name                        | * | * | * | * | Optional extra nameserver |
+| 3b. IP address                  | ^ | ^ | ^ | ^ | IP address |
+| 3c. Name                        | + | + | + | + | Mandatory name server |
+| 3d. IP address                  | ^ | ^ | ^ | ^ | IP address |
 | 3e. Name                        | * | * | * | * | Optional extra nameserver |
-| 3f. Name                        | * | * | * | * | Optional extra nameserver |
+| 3f. IP address                  | ^ | ^ | ^ | ^ | IP address |
 | 3g. Name                        | * | * | * | * | Optional extra nameserver |
+| 3h. IP address                  | ^ | ^ | ^ | ^ | IP address |
+| 3i. Name                        | * | * | * | * | Optional extra nameserver |
+| 3j. IP address                  | ^ | ^ | ^ | ^ | IP address |
+| 3k. Name                        | * | * | * | * | Optional extra nameserver |
+| 3l. IP address                  | ^ | ^ | ^ | ^ | IP address |
+| 3m. Name                        | * | * | * | * | Optional extra nameserver |
+| 3n. IP address                  | ^ | ^ | ^ | ^ | IP address |
 | **Registrant contact section**  |   |   |   |   | The registrant section can either be filled in as a user-id or a complete set of data | 
 | 4.  User ID                     | ! | ! | ! | ! | Existing user-id |
 | 4a. User type                   | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
@@ -168,42 +166,6 @@ Field types [CPAI]
 | 6l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 6m. Phone number                | + | + | + | + | Mandatory phone number |
 | 6n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
-| **Keyholder contact section**   |   |   |   |   | The keyholder contact section can either be filled in as a user-id or a complete set of data, if DS keys are included and the section is not filled in data from the above Registrant contact section will be used | 
-| 7.  User ID                     | ! | ! | ! | ! | Existing user-id |
-| 7a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
-| 7b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
-| 7c. VAT number                  | + | + | * | - | VAT/CVR number |
-| 7d. Person                      | * | * | * | + | Name of individual |
-| 7e. Address 1                   | + | + | + | + | Mandatory address field |
-| 7f. Address 2                   | * | * | * | * | Optional address field |
-| 7g. Address 3                   | * | * | * | * | Optional address field |
-| 7h. Postal code                 | + | + | + | + | Mandatory zip/postal code |
-| 7i. City                        | + | + | + | + | Mandatory city name |
-| 7j. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
-| 7k. E-mail address              | + | + | + | + | Mandatory e-mail address |
-| 7l. Phone number                | + | + | + | + | Mandatory phone number |
-| 7m. Fax number                  | * | * | * | * | Optional fax/facsimile number |
-| **DNSSEC section**   |   |   |   |   | | 
-| 8a. Keytag                      | * | * | * | * | Unique keytag of DS keyset 1, the keytag has to be unique to the domain name set of keys |
-| 8b. Algorithm                   | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
-| 8c. Digest_type                 | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
-| 8d. Digest                      | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
-| 9a. Keytag                      | * | * | * | * | Unique keytag of DS keyset 2, the keytag has to be unique to the domain name set of keys |
-| 9b. Algorithm                   | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
-| 9c. Digest_type                 | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
-| 9d. Digest                      | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
-| 10a. Keytag                     | * | * | * | * | Unique keytag of DS keyset 3, the keytag has to be unique to the domain name set of keys |
-| 10b. Algorithm                  | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
-| 10c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
-| 10d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
-| 11a. Keytag                     | * | * | * | * | Unique keytag of DS keyset 4, the keytag has to be unique to the domain name set of keys |
-| 11b. Algorithm                  | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
-| 11c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
-| 11d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
-| 12a. Keytag                     | * | * | * | * | Unique keytag of DS keyset 5, the keytag has to be unique to the domain name set of keys |
-| 12b. Algorithm                  | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
-| 12c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
-| 12d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
 
 <a name="form-keys"></a>
 ## Form Keys
@@ -669,27 +631,11 @@ If we reject your application, you will not receive a tracking number. We will h
 
 You will find the blank forms here:
 
-  * [5.00 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00en.txt)
-  * [5.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00da.txt), please note that this file is encoded using ISO-8859-1
+  * [3.04 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/3.04/3.04en.txt)
+  * [3.04 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/3.04/3.04da.txt), please note that this file is encoded using ISO-8859-1
 
 <a name="resources"></a>
 # Resources 
-
-<a name="pre-activation"></a>
-## Pre-activation
-
-The mail form only support the transport of the pre-activation token (`Preactivations token`). The token has to have been pre-registered with DK Hostmaster using the pre-activation service. If the provided token is not valid or existing at the time of reception of the application, the application will be processed as no pre-activation has taken place.
-
-More information and documentation on the pre-activation service is available at the DK Hostmaster website:
-
-  * https://www.dk-hostmaster.dk/en/pre-activation
-
-<a name="dnssec"></a>
-## DNSSEC
-
-More information and documentation on the use of DNSSEC service is available at the DK Hostmaster website:
-
-  * https://www.dk-hostmaster.dk/en/dns
 
 <a name="mailing-list"></a>
 ## Mailing list

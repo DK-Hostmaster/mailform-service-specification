@@ -1,0 +1,81 @@
+Vejledning på https://github.com/DK-Hostmaster/mailform-service-specification
+
+DK Domain Version Number: 3.04da
+
+Felttyper.......................[VOFP]
+
+Registrator
+1a. Registrator-id..............[++++]:
+1b. Registrators reference......[****]:
+
+Domænenavn
+2a. Domænenavn..................[++++]:
+2b. Registreringsperiode (år)...[++++]:
+2c. VID/Kvalificeret domænenavn.[++++]:
+2d. Betalers rekvisitionsnummer.[****]:
+2e. Dimensionskonto.............[-*--]:
+
+Navneservere
+3a. Navn........................[++++]:
+3b. IP-adresse..................[^^^^]:
+3c. Navn........................[++++]:
+3d. IP-adresse..................[^^^^]:
+3e. Navn........................[****]:
+3f. IP-adresse..................[^^^^]:
+3g. Navn........................[****]:
+3h. IP-adresse..................[^^^^]:
+3i. Navn........................[****]:
+3j. IP-adresse..................[^^^^]:
+3k. Navn........................[****]:
+3l. IP-adresse..................[^^^^]:
+3m. Navn........................[****]:
+3n. IP-adresse..................[^^^^]:
+
+Registrant
+4.  Bruger-id...................[!!!!]:
+4a. Brugertype (VOFP)...........[++++]:
+4b. Virksomhed/Organisation.....[+++-]:
+4c. CVR-nummer..................[++*-]:
+4e. Person......................[---+]:
+4f. Adresse 1...................[++++]:
+4g. Adresse 2...................[****]:
+4h. Adresse 3...................[****]:
+4i. Postnummer..................[++++]:
+4j. By..........................[++++]:
+4k. Landekode...................[++++]:
+4l. E-mail-adresse..............[++++]:
+4m. Telefonnummer...............[++++]:
+4n. Faxnummer...................[****]:
+
+Fuldmægtig
+5.  Bruger-id...................[!!!!]:
+5a. Brugertype (VOFP)...........[++++]:
+5b. Virksomhed/Organisation.....[+++-]:
+5c. CVR-nummer..................[++*-]:
+5e. Person......................[***+]:
+5f. Adresse 1...................[++++]:
+5g. Adresse 2...................[****]:
+5h. Adresse 3...................[****]:
+5i. Postnummer..................[++++]:
+5j. By..........................[++++]:
+5k. Landekode...................[++++]:
+5l. E-mail-adresse..............[++++]:
+5m. Telefonnummer...............[++++]:
+5n. Faxnummer...................[****]:
+
+Betaler
+6.  Bruger-id...................[!!!!]:
+6a. Brugertype (VOFP)...........[++++]:
+6b. Virksomhed/Organisation.....[+++-]:
+6c. CVR-nummer..................[++*-]:
+6d. EAN-nummer..................[-+--]:
+6e. Person......................[***+]:
+6f. Adresse 1...................[++++]:
+6g. Adresse 2...................[****]:
+6h. Adresse 3...................[****]:
+6i. Postnummer..................[++++]:
+6j. By..........................[++++]:
+6k. Landekode...................[++++]:
+6l. E-mail-adresse..............[++++]:
+6m. Telefonnummer...............[++++]:
+6n. Faxnummer...................[****]:

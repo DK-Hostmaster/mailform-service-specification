@@ -5,7 +5,7 @@ Public specification for the DK Hostmaster mailform domain registration service.
 # **_DRAFT_**
 
 2016/12/28
-Revision: 5.0
+Revision: 4.0
 
 # Table of Contents
 
@@ -21,7 +21,6 @@ Revision: 5.0
 - [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
 - [Submission of the application form](#submission-of-the-application-form)
 - [Resources](#resources)
-  - [Pre-activation](#pre-activation)
   - [DNSSEC](#dnssec)
   - [Mailing list](#mailing-list)
   - [Issue Reporting](#issue-reporting)
@@ -31,15 +30,15 @@ Revision: 5.0
 <a name="introduction"></a>
 # Introduction
 
-This documentation describes the current version 5.00, earlier revisions might still be actively supported for for documentation on these revisions please see:
+This documentation describes version 4.00, earlier revisions might still be actively supported for documentation on these and newer revisions please see:
 
-  * [Version 4.00](README_4.00.md)
-  * [Version 3.04](README_3.04.md)
+  * [Version 5.00][README.md]
+  * [Version 3.04][README_3.04.md]
 
 <a name="about-this-document"></a>
 # About this Document
 
-This specification describes version 5 (5.X.X) of the service and version 5.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
+This specification describes version 4 (4.X.X) of the service and version 4.XX of the form implementations. Future releases will be reflected in updates to this specification, please see the document history section below.
 
 Any future extensions and possible additions and changes to the implementation are not within the scope of this document and will not be discussed or mentioned throughout this document.
 
@@ -52,11 +51,8 @@ Printable version can be obtained via [this link](https://github.com/DK-Hostmast
 <a name="document-history"></a>
 ## Document History
 
-* 5.0 2016-12-28 
-  * Documentation migrated from proprietary text/HTML files to dedicated Github repository, so we reset history, but start from version 5.00 to be consistent with earlier documentation, API revisions and service versions.
-  * The revision introduces the pre-activation token
-
 * 4.0 2016-12-28
+  * Documentation migrated from proprietary text/HTML files to dedicated Github repository
   * This revision introduces DNSSEC and keyholder user
 
 <a name="the-dk-registry-in-brief"></a>
@@ -113,7 +109,6 @@ Field types [CPAI]
 | 2c. VID (VIP domain name)       | + | + | + | + | Can only be `N` |
 | 2d. Billing contact's PO-number | * | * | * | * | Optional purcharse order number |
 | 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organisations |
-| 2f. Preactivations token        | * | * | * | * | Optional pre-activation token from the pre-activation service, the token is not valid application will be regarded as a regular application |
 | **Name servers section**        |   |   |   |   |             |
 | 3a. Name                        | + | + | + | + | Mandatory name server |
 | 3b. Name                        | + | + | + | + | Mandatory name server |
@@ -669,20 +664,11 @@ If we reject your application, you will not receive a tracking number. We will h
 
 You will find the blank forms here:
 
-  * [5.00 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00en.txt)
-  * [5.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/5.00/5.00da.txt), please note that this file is encoded using ISO-8859-1
+  * [4.00 english version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/4.00/4.00en.txt)
+  * [4.00 danish version](https://raw.githubusercontent.com/DK-Hostmaster/mailform-service-specification/master/4.00/4.00da.txt), please note that this file is encoded using ISO-8859-1
 
 <a name="resources"></a>
 # Resources 
-
-<a name="pre-activation"></a>
-## Pre-activation
-
-The mail form only support the transport of the pre-activation token (`Preactivations token`). The token has to have been pre-registered with DK Hostmaster using the pre-activation service. If the provided token is not valid or existing at the time of reception of the application, the application will be processed as no pre-activation has taken place.
-
-More information and documentation on the pre-activation service is available at the DK Hostmaster website:
-
-  * https://www.dk-hostmaster.dk/en/pre-activation
 
 <a name="dnssec"></a>
 ## DNSSEC
