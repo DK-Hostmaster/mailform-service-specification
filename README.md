@@ -34,7 +34,7 @@ Revision: 5.0
 This documentation primarily describes the current version 5.00, earlier revisions might still be actively supported for for documentation on these revisions please see:
 
   * [Version 4.00][README_4.00.md]
-  * [Version 3.04][README_3.04.md]_
+  * [Version 3.04][README_3.04.md]
 
 <a name="about-this-document"></a>
 # About this Document
