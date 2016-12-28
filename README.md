@@ -17,7 +17,7 @@ Revision: 5.0
 - [The .dk Registry in Brief](#the-dk-registry-in-brief)
 - [Mail-form Service](#mail-form-service)
 - [The Form](#the-form)
-  - [Keys](#keys)
+  - [Form Keys](#form-keys)
 - [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
 - [Submission of the application form](#submission-of-the-application-form)
 - [Resources](#resources)
@@ -34,7 +34,7 @@ Revision: 5.0
 This documentation primarily describes the current version 5.00, earlier revisions might still be actively supported for for documentation on these revisions please see:
 
   * [Version 4.00][README_4.00.md]
-  * [Version 3.04][README_3.04.md] - _will be deprecated by the 1. of june 2015_
+  * [Version 3.04][README_3.04.md]_
 
 <a name="about-this-document"></a>
 # About this Document
@@ -200,8 +200,8 @@ Field types [CPAI]
 | 12c. Digest_type                | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
 | 12d. Digest                     | ^ | ^ | ^ | ^ | Digest calculated for DS keyset |
 
-<a name="keys"></a>
-## Keys
+<a name="form-keys"></a>
+## Form Keys
 
   <table border="0">
     <tbody>
