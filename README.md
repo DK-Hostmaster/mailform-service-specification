@@ -74,43 +74,43 @@ In addition to the assets, DK Hostmaster aims to assist client, users and develo
 
 The top of the form reads [`CPAI`]. The 4 letters describe 4 columns that continue down the form. They stand for:
 
-  * **C**ompany (Danish: Virksomhed)
-  * Danish **P**ublic sector organisation (Danish: Offentlig virksomhed)
-  * **A**ssociation (Danish: Forening)
-  * **I**ndividual (Danish: Privatperson)
-  
-  The columns determine how the individual sections are to be filled in. If, for example, the registrant is a company, then column **'C'** must be used for section 4. If the billing contact is a Danish public sector organisation, then **'P'** must be used when filling in section 6.
+* **C**ompany (Danish: Virksomhed)
+* Danish **P**ublic sector organisation (Danish: Offentlig virksomhed)
+* **A**ssociation (Danish: Forening)
+* **I**ndividual (Danish: Privatperson)
 
-  Field 2c must, only contain an 'N'.
-  
-  Field 2d concerns the billing contact and may be used only if the billing contact is a Danish public sector organisation that is to be invoiced via the Danish OIOXML/UBLXML standard. Field 2e also concerns the billing contact, but may be used by anyone requiring a purchase order number on future invoices relating to the domain name.
-  
-  Fields 2d and 2e are not included in section 6 because the electronic account code (Danish: DimensionsKontoStreng) and purchase order number will be linked with the individual domain name and not the billing contact's user ID. If the billing contact is changed, the electronic account code and purchase order number will therefore be removed from the domain name.
+The columns determine how the individual sections are to be filled in. If, for example, the registrant is a company, then column **'C'** must be used for section 4. If the billing contact is a Danish public sector organisation, then **'P'** must be used when filling in section 6.
 
-  The other fields in sections 1, 2 and 3 are not associated with any specific user type.
-  
-  If section 5 is not filled in, section 4 will automatically be copied into section 5.
-  
-  If section 6 is not filled in, section 5 will automatically be copied into section 6.
-  
-  Section 7-12 is about DNSSEC and shall only be put to use of the keyholder (section 7) and up to 5 keysets (sections 8-12) should be appointed to the domain from the time of set up.
+Field 2c must, only contain an 'N'.
+
+Field 2d concerns the billing contact and may be used only if the billing contact is a Danish public sector organisation that is to be invoiced via the Danish OIOXML/UBLXML standard. Field 2e also concerns the billing contact, but may be used by anyone requiring a purchase order number on future invoices relating to the domain name.
+
+Fields 2d and 2e are not included in section 6 because the electronic account code (Danish: DimensionsKontoStreng) and purchase order number will be linked with the individual domain name and not the billing contact's user ID. If the billing contact is changed, the electronic account code and purchase order number will therefore be removed from the domain name.
+
+The other fields in sections 1, 2 and 3 are not associated with any specific user type.
+
+If section 5 is not filled in, section 4 will automatically be copied into section 5.
+
+If section 6 is not filled in, section 5 will automatically be copied into section 6.
+
+Section 7-12 is about DNSSEC and shall only be put to use of the keyholder (section 7) and up to 5 keysets (sections 8-12) should be appointed to the domain from the time of set up.
 
 DK Domain Version Number: 5.00en
 Field types [CPAI]
 
 | Field                           | C | P | A | I | Description |
 | ------------------------------- |---|---|---|---|-------------|
-| *Registrar section*             |   |   |   |   |             |
+| **Registrar section**           |   |   |   |   |             |
 | 1a. Registrar ID                | + | + | + | + | Unique id for the registrar submitting the form |
 | 1b. Registrar's reference       | * | * | * | * | Optional ID for identification by the registrar |
-| *Domain name section*           |   |   |   |   |             |             
+| **Domain name section**         |   |   |   |   |             |             
 | 2a. Domain name                 | + | + | + | + | Application domain name |
 | 2b. Registration period (years) | + | + | + | + | `1`, `2`, `3` or `5` years |
 | 2c. VID (VIP domain name)       | + | + | + | + | Can only be `N` |
 | 2d. Billing contact's PO-number | * | * | * | * | Optional purcharse order number |
 | 2e. Electronic account code     | - | * | - | - | EAN-number for eletronical billing, only applicable for public organisations |
 | 2f. Preactivations token        | * | * | * | * | Optional pre-activation token from the pre-activation service, the token is not valid application will be regarded as a regular application |
-| *Name servers section*          |   |   |   |   |             |
+| **Name servers section**        |   |   |   |   |             |
 | 3a. Name                        | + | + | + | + | Mandatory name server |
 | 3b. Name                        | + | + | + | + | Mandatory name server |
 | 3c. Name                        | * | * | * | * | Optional extra nameserver |
@@ -118,7 +118,7 @@ Field types [CPAI]
 | 3e. Name                        | * | * | * | * | Optional extra nameserver |
 | 3f. Name                        | * | * | * | * | Optional extra nameserver |
 | 3g. Name                        | * | * | * | * | Optional extra nameserver |
-| *Registrant contact section*    |   |   |   |   | The registrant section can either be filled in as a user-id or a complete set of data | 
+| **Registrant contact section**  |   |   |   |   | The registrant section can either be filled in as a user-id or a complete set of data | 
 | 4.  User ID                     | ! | ! | ! | ! | Existing user-id |
 | 4a. User type                   | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
 | 4b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
@@ -133,7 +133,7 @@ Field types [CPAI]
 | 4l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 4m. Phone number                | + | + | + | + | Mandatory phone number |
 | 4n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
-| *Administrator contact section* |   |   |   |   | The administrator contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used |
+| **Administrator contact section** |   |   |   |   | The administrator contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used |
 | 5.  User ID                     | ! | ! | ! | ! | Existing user-id |
 | 5a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
 | 5b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
@@ -148,7 +148,7 @@ Field types [CPAI]
 | 5l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 5m. Phone number                | + | + | + | + | Mandatory phone number |
 | 5n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
-| *Billing contact section*       |   |   |   |   | The billing contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used | 
+| **Billing contact section**     |   |   |   |   | The billing contact section can either be filled in as a user-id or a complete set of data, if not filled in data from the above Registrant contact section will be used | 
 | 6.  User ID                     | ! | ! | ! | ! | Existing user-id |
 | 6a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
 | 6b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
@@ -164,7 +164,7 @@ Field types [CPAI]
 | 6l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 6m. Phone number                | + | + | + | + | Mandatory phone number |
 | 6n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
-| Keyholder contact section |   |   |   |   | The keyholder contact section can either be filled in as a user-id or a complete set of data, if DS keys are included and the section is not filled in data from the above Registrant contact section will be used | 
+| **Keyholder contact section**   |   |   |   |   | The keyholder contact section can either be filled in as a user-id or a complete set of data, if DS keys are included and the section is not filled in data from the above Registrant contact section will be used | 
 | 7.  User ID                     | ! | ! | ! | ! | Existing user-id |
 | 7a. User type (CPAI)            | + | + | + | + | User type `C` (company), `P` Public Organisation, `A` Association or `I` individual |
 | 7b. Company/Organisation        | + | + | + | - | Name of company, Organisation or Association |
@@ -179,6 +179,7 @@ Field types [CPAI]
 | 7k. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 7l. Phone number                | + | + | + | + | Mandatory phone number |
 | 7m. Fax number                  | * | * | * | * | Optional fax/facsimile number |
+| **DNSSEC section**   |   |   |   |   | | 
 | 8a. Keytag                      | * | * | * | * | Unique keytag of DS keyset 1, the keytag has to be unique to the domain name set of keys |
 | 8b. Algorithm                   | ^ | ^ | ^ | ^ | Algorithm used for DS keyset |
 | 8c. Digest_type                 | ^ | ^ | ^ | ^ | Digest type used for DS keyset |
