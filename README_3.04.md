@@ -2,8 +2,6 @@
 
 Public specification for the DK Hostmaster mailform domain registration service.
 
-# **_DRAFT_**
-
 2016/12/28
 Revision: 3.0
 

@@ -2,8 +2,6 @@
 
 Public specification for the DK Hostmaster mailform domain registration service.
 
-# **_DRAFT_**
-
 2016/12/28
 Revision: 5.0
 
@@ -53,11 +51,15 @@ Printable version can be obtained via [this link](https://github.com/DK-Hostmast
 ## Document History
 
 * 5.0 2016-12-28 
-  * Documentation migrated from proprietary text/HTML files to dedicated Github repository, so we reset history, but start from version 5.00 to be consistent with earlier documentation, API revisions and service versions.
+  * Documentation migrated from proprietary text/HTML files to dedicated Github repository, we reset history and start from version 5.00 to be consistent with earlier documentation, API revisions and service versions.
   * The revision introduces the pre-activation token
 
 * 4.0 2016-12-28
+  * Documentation migrated from proprietary text/HTML files to dedicated Github repository
   * This revision introduces DNSSEC and keyholder user
+
+* 3.0 2016-12-28
+  * Documentation migrated from proprietary text/HTML files to dedicated Github repository
 
 <a name="the-dk-registry-in-brief"></a>
 # The .dk Registry in Brief
