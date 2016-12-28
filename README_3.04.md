@@ -131,7 +131,7 @@ Field types [CPAI]
 | 4h. Address 3                   | * | * | * | * | Optional address field |
 | 4i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 4j. City                        | + | + | + | + | Mandatory city name |
-| 4k. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
+| 4k. Country code                | + | + | + | + | Mandatory two-letter country code ([ISO-3166-1][ISO-3166-1]) |
 | 4l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 4m. Phone number                | + | + | + | + | Mandatory phone number |
 | 4n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
@@ -146,7 +146,7 @@ Field types [CPAI]
 | 5h. Address 3                   | * | * | * | * | Optional address field |
 | 5i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 5j. City                        | + | + | + | + | Mandatory city name |
-| 5k. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
+| 5k. Country code                | + | + | + | + | Mandatory two-letter country code ([ISO-3166-1][ISO-3166-1]) |
 | 5l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 5m. Phone number                | + | + | + | + | Mandatory phone number |
 | 5n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
@@ -162,7 +162,7 @@ Field types [CPAI]
 | 6h. Address 3                   | * | * | * | * | Optional address field |
 | 6i. Postal code                 | + | + | + | + | Mandatory zip/postal code |
 | 6j. City                        | + | + | + | + | Mandatory city name |
-| 6k. Country code                | + | + | + | + | Mandatory two-digit country code ([ISO-3166-1][ISO-3166-1]) |
+| 6k. Country code                | + | + | + | + | Mandatory two-letter country code ([ISO-3166-1][ISO-3166-1]) |
 | 6l. E-mail address              | + | + | + | + | Mandatory e-mail address |
 | 6m. Phone number                | + | + | + | + | Mandatory phone number |
 | 6n. Fax number                  | * | * | * | * | Optional fax/facsimile number |
