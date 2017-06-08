@@ -11,18 +11,19 @@ Revision: 5.0
 
 - [Introduction](#introduction)
 - [About this Document](#about-this-document)
-  - [Document History](#document-history)
+	- [Document History](#document-history)
 - [The .dk Registry in Brief](#the-dk-registry-in-brief)
 - [Mail-form Service](#mail-form-service)
+	- [Waiting List](#waiting-list)
 - [The Form](#the-form)
-  - [Form Keys](#form-keys)
+	- [Form Keys](#form-keys)
 - [General advice concerning completion of the application form](#general-advice-concerning-completion-of-the-application-form)
 - [Submission of the application form](#submission-of-the-application-form)
 - [Resources](#resources)
-  - [Pre-activation](#pre-activation)
-  - [DNSSEC](#dnssec)
-  - [Mailing list](#mailing-list)
-  - [Issue Reporting](#issue-reporting)
+	- [Pre-activation](#pre-activation)
+	- [DNSSEC](#dnssec)
+	- [Mailing list](#mailing-list)
+	- [Issue Reporting](#issue-reporting)
 
 <!-- /MarkdownTOC -->
 
@@ -74,6 +75,13 @@ The DK Hostmaster mail-form service is a service offered to external parties off
 The service requires the use of and possible development of client-side software and integration. This is beyond the scope of this specification as the API and other assets for assisting in this are the primary object of this document.
 
 In addition to the assets, DK Hostmaster aims to assist client, users and developers of client software with integration towards DK Hostmaster and therefore provide facilities to ease this integration.
+
+<a name="waiting-list"></a>
+## Waiting List
+
+DK Hostmaster offers a waiting list service for domainnames, when a domainname becomes available to the first position on a waiting list, it should be registered using the standard registration proces either using the **email form** or **EPP**. This influences the create domain command, which should just be populated with the userid of the user which has been pre-approved for registration of the domainname with DK Hostmaster.
+
+Please refer to the DK Hostmaster A/S [website](https://www.dk-hostmaster.dk/en/waiting-list) for more information.
 
 <a name="the-form"></a>
 # The Form
