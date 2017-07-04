@@ -214,7 +214,7 @@ Field types [CPAI]
     <tbody>
       <tr>
         <td valign="top">!</td>
-        <td>If this field is filled in, the rest of the section does not need to be completed because the contents of the other fields will automatically be filled in with details from the user ID concerned.</td>
+        <td>If this field is filled in, the rest of the section should not be completed because the contents of the other fields will automatically be filled in with details from the user ID concerned.</td>
       </tr>
       <tr>
         <td valign="top">+</td>
