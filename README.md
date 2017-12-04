@@ -1,8 +1,23 @@
 # DK Hostmaster Mailform Service Specification
 
+---
+
+:warning:  TAKE NOTICE!  :warning:
+
+This service is being decommissioned by the end of May 2018.
+
+Please refer to the [EPP service](https://github.com/DK-Hostmaster/epp-service-specification) for implementation of domain name registration 
+towards DK Hostmaster A/S.
+
+Please contact us if you have any questions:
+
+`tech@dk-hostmaster.dk`
+
+---
+
 Public specification for the DK Hostmaster mailform domain registration service.
 
-2016/12/28
+2017/12/03
 Revision: 5.0
 
 # Table of Contents
